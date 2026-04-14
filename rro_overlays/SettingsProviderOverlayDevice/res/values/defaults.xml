@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The Android Open Source Project
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Disable dial pad tones by default -->
+    <bool name="def_dtmf_tones_enabled">false</bool>
+
+    <!-- Enable vibrate for calls by default -->
+    <bool name="def_vibrate_when_ringing">true</bool>
+
+    <!-- Disable UI touch sounds by default -->
+    <bool name="def_sound_effects_enabled">false</bool>
+
+    <!-- Set the automatic brightness mode on by default -->
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Set Window animation scale to 100% by default -->
+    <fraction name="def_window_animation_scale">60%</fraction>
+
+    <!-- Set Window transition scale to 100% by default -->
+    <fraction name="def_window_transition_scale">60%</fraction>
+
+</resources>

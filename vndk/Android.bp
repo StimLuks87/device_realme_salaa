@@ -1,0 +1,74 @@
+//
+// SPDX-FileCopyrightText: The Android Open Source Project
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_prebuilt_library_shared {
+	name: "libbinder-v32",
+    vendor_available: true,
+	strip: {
+		none: true,
+	},
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libbase",
+        "libc++",
+        "libc",
+        "libm",
+        "libdl",
+    ],
+	target: {
+		android_arm64: {
+			srcs: ["arm64/libbinder-v32.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyalsa-v32",
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc++",
+        "libc",
+        "libdl",
+    ],
+    target: {
+        android_arm: {
+            srcs: ["arm/libtinyalsa-v32.so"],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+}
+
+/*
+cc_prebuilt_library_shared {
+	name: "libhidlbase-v32",
+    vendor_available: true,
+	strip: {
+		none: true,
+	},
+    shared_libs: [
+        "libbase",
+        "libc++",
+        "libcutils",
+        "liblog",
+        "libutils",
+    ],
+	target: {
+		android_arm64: {
+			srcs: ["arm64/libhidlbase-v32.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+}
+*/

@@ -1,0 +1,24 @@
+From 255356177ef598594ad0dbd970f8fa13f64b37de Mon Sep 17 00:00:00 2001
+From: StimLuks87 <san10031987san@gmail.com>
+Date: Fri, 5 Dec 2025 14:44:49 +0500
+Subject: [PATCH] build libandroidicu in vendor
+
+---
+ libandroidicu/Android.bp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libandroidicu/Android.bp b/libandroidicu/Android.bp
+index 4ab0141..623f631 100644
+--- a/libandroidicu/Android.bp
++++ b/libandroidicu/Android.bp
+@@ -99,6 +99,7 @@ cc_library_shared {
+         "//external/sqlite:__subpackages__",
+         "//frameworks/av/media/libmedia",
+         "//frameworks/base/ravenwood:__subpackages__",
++        "//vendor:__subpackages__",
+     ],
+ }
+ 
+-- 
+2.43.0
+

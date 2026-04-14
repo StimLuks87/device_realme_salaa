@@ -1,0 +1,49 @@
+dontaudit vendor_init vendor_userdir_file:dir write;
+dontaudit vendor_init system_data_file:dir write;
+dontaudit vendor_init proc:file write;
+dontaudit vendor_init bluetooth_data_file:dir { getattr search };
+
+allow vendor_init sysfs_leds:dir search;
+allow vendor_init sysfs_leds:file rw_file_perms;
+allow vendor_init proc_sched:file rw_file_perms;
+allow vendor_init proc_sched_stune:file w_file_perms;
+allow vendor_init proc_swappiness:file rw_file_perms;
+allow vendor_init proc_watermark_boost_factor:file w_file_perms;
+allow vendor_init vendor_sysfs_usb_supply:dir search;
+allow vendor_init vendor_sysfs_usb_supply:file w_file_perms;
+allow vendor_init vendor_sysfs_otg_switch:dir search;
+allow vendor_init vendor_sysfs_otg_switch:file w_file_perms;
+allow vendor_init vendor_sysfs_battery_supply:dir search;
+allow vendor_init vendor_sysfs_battery_supply:file rw_file_perms;
+allow vendor_init vendor_sysfs_graphics:dir search;
+allow vendor_init vendor_sysfs_graphics:file rw_file_perms;
+allow vendor_init vendor_proc_display:file { rw_file_perms create_file_perms };
+allow vendor_init vendor_proc_oplus_fastchg:file rw_file_perms;
+allow vendor_init vendor_data_file:dir rw_dir_perms;
+allow vendor_init vtservice_hidl:fd use;
+allow vendor_init cgroup:file rw_file_perms;
+allow vendor_init ccci_device:chr_file r_file_perms;
+allow vendor_init hal_performance_oplus_hwservice:hwservice_manager find;
+allow vendor_init hal_audio_default:file rw_file_perms;
+allow vendor_init mtk_radio_device:lnk_file unlink;
+allow vendor_init mtk_hal_videotelephony_hwservice:hwservice_manager find;
+allow vendor_init nfc_data_vendor_file:dir { r_dir_perms create_dir_perms };
+
+get_prop(vendor_init, system_cabc_prop)
+get_prop(vendor_init, vendor_variant_prop)
+get_prop(vendor_init, vendor_default_prop)
+get_prop(vendor_init, vts_status_prop)
+get_prop(vendor_init, wifi_hal_prop)
+
+set_prop(vendor_init, system_oplus_sensor_prop)
+set_prop(vendor_init, system_oplus_camera_prop)
+set_prop(vendor_init, system_oplus_audio_prop)
+set_prop(vendor_init, system_oplus_project_prop)
+set_prop(vendor_init, vendor_oplus_sensor_prop)
+set_prop(vendor_init, vendor_oplus_touch_prop)
+set_prop(vendor_init, vendor_audio_tuning_prop)
+set_prop(vendor_init, vendor_oplus_camera_prop)
+set_prop(vendor_init, vendor_oplus_radio_prop)
+set_prop(vendor_init, vendor_mtk_vendor_vt_prop)
+set_prop(vendor_init, vendor_audio_prop)
+set_prop(vendor_init, vendor_oplus_prop)

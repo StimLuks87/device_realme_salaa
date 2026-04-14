@@ -1,0 +1,3 @@
+allow mediaserver media_quality_service:service_manager find;
+allow mediaserver package_native_service:service_manager find;
+get_prop(mediaserver, system_mtk_graphics_sf_gll_prop)

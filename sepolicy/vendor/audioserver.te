@@ -1,0 +1,6 @@
+hal_client_domain(audioserver, hal_dms)
+dontaudit audioserver vendor_default_prop:file read;
+allow audioserver hal_audio_default:process signal;
+set_prop(audioserver, audio_prop)
+get_prop(audioserver, vendor_audio_prop)
+get_prop(audioserver, vendor_mtk_audio_prop)

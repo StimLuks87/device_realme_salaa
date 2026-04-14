@@ -1,0 +1,2 @@
+allow thermal_core proc_gpufreq:file r_file_perms;
+allow thermal_core proc_gpufreq:dir search;

@@ -1,0 +1,2 @@
+allow priv_app metadata_file:dir search;
+dontaudit priv_app adbd_tradeinmode:unix_stream_socket connectto;

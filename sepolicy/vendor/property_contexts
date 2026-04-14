@@ -1,0 +1,82 @@
+# Audio
+persist.vendor.audio.tuning.def_path         u:object_r:vendor_audio_tuning_prop:s0
+persist.vendor.audiohal.aurisys.pcm_dump_on  u:object_r:vendor_audio_tuning_prop:s0
+persist.vendor.audiohal.p2w_dump_on          u:object_r:vendor_audio_tuning_prop:s0
+persist.vendor.audiohal.pcm_mixer_dump_on    u:object_r:vendor_audio_tuning_prop:s0
+ro.vendor.connsys.dedicated.log.port         u:object_r:vendor_mtk_default_prop:s0
+
+# Camera
+persist.vendor.camera.privapp.list           u:object_r:vendor_persist_camera_prop:s0
+ro.vendor.oplus.camera.                      u:object_r:vendor_oplus_camera_prop:s0
+vendor.oplus.camera.                         u:object_r:vendor_oplus_camera_prop:s0
+vendor.oppo.                                 u:object_r:vendor_oplus_camera_prop:s0
+
+# Sensor
+vendor.oplus.sensor.                         u:object_r:vendor_oplus_sensor_prop:s0
+ro.vendor.oplus.sensor.                      u:object_r:vendor_oplus_sensor_prop:s0
+ro.vendor.oplus.aal.                         u:object_r:vendor_oplus_sensor_prop:s0
+
+# Dolby Properties
+ro.vendor.audio.dolby.dax.support            u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.dolby.dax.version            u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.dolby.surround.enable        u:object_r:vendor_audio_prop:s0
+ro.vendor.dolby.dax.version                  u:object_r:vendor_audio_prop:s0
+
+# Dynamic sensor
+vendor.dynamic_sensor.                       u:object_r:vendor_dynamic_sensor_prop:s0
+
+# Fingerprint
+persist.vendor.fingerprint.                  u:object_r:vendor_oplus_fingerprint_prop:s0
+persist.vendor.fp.                           u:object_r:vendor_oplus_fingerprint_prop:s0
+vendor.flash.locked                          u:object_r:vendor_oplus_fingerprint_prop:s0
+vendor.fingerprint.                          u:object_r:vendor_oplus_fingerprint_prop:s0
+
+# Media
+vendor.sys.media.                            u:object_r:vendor_media_prop:s0
+
+# Motorola Dolby
+persist.vendor.audio.dolby.tws_tuning        u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.moto_sst_supported           u:object_r:vendor_audio_prop:s0
+ro.vendor.dolby.no_custom_profile            u:object_r:vendor_audio_prop:s0
+
+# NFC
+ro.vendor.device                             u:object_r:vendor_variant_prop:s0
+ro.vendor.device.variant                     u:object_r:vendor_variant_prop:s0
+
+# Oplus Project
+ro.vendor.oplus.display.aod.force_gpu_compose u:object_r:vendor_oplus_prop:s0
+ro.vendor.config.oplus.                      u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.market.                      u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.version_suffix               u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.exp.version                  u:object_r:vendor_oplus_prop:s0
+ro.vendor.oplus.version                      u:object_r:vendor_oplus_prop:s0
+ro.vendor.version_variant                    u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wifi.meta.status                u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wifi.rus.version                u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wifi.rus.upgrade.ctl            u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wlan.sar_last_idx               u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wifi.dump.status                u:object_r:vendor_oplus_prop:s0
+vendor.oplus.wifi.dump.failureDesc           u:object_r:vendor_oplus_prop:s0
+
+# Radio
+ro.vendor.oplus.audiodriver.operator         u:object_r:vendor_oplus_radio_prop:s0
+ro.vendor.oplus.regionmark                   u:object_r:vendor_oplus_radio_prop:s0
+ro.vendor.oplus.operator                     u:object_r:vendor_oplus_radio_prop:s0
+ro.vendor.oplus.euex.country                 u:object_r:vendor_oplus_radio_prop:s0
+ro.vendor.oplus.radio.                       u:object_r:vendor_oplus_radio_prop:s0
+vendor.oplus.radio.                          u:object_r:vendor_oplus_radio_prop:s0
+
+# VT
+ro.vendor.vt.mtk_thin_md_support_mode        u:object_r:vendor_mtk_vendor_vt_prop:s0
+ro.vendor.mtk_data_config                    u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# Tee
+vendor.tee.googlekey.status                  u:object_r:vendor_mtk_trustonic_tee_prop:s0
+
+# Touch
+vendor.debug.tpi.                            u:object_r:vendor_oplus_touch_prop:s0
+vendor.oplus.touch.                          u:object_r:vendor_oplus_touch_prop:s0
+vendor.touchdaemon.                          u:object_r:vendor_oplus_touch_prop:s0
+
+# USB string
+vendor.usb.product_string                    u:object_r:vendor_variant_prop:s0

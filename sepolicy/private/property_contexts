@@ -1,0 +1,92 @@
+# Audio
+audio.tuning.def_path                            u:object_r:system_oplus_audio_prop:s0
+sys.oplus.mm.                                    u:object_r:system_oplus_audio_prop:s0
+
+# Bluetooth
+bluetooth.device_id.vendor_id                    u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.a2dp_aac_abr.enable            u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.enable_power_stats             u:object_r:exported_bluetooth_prop:s0
+persist.sys.bt.a2dp.pendingtime                  u:object_r:exported_system_prop:s0
+
+# Camera
+demo.                                            u:object_r:exported_system_prop:s0
+oplus.switch.                                    u:object_r:exported_system_prop:s0
+oplus.CTP.Tunningmode                            u:object_r:exported_system_prop:s0
+persist.sys.camera.lao.enable                    u:object_r:exported_system_prop:s0
+sys.oppo_ftm_mode                                u:object_r:exported_system_prop:s0
+sys.multiwin_for_camera                          u:object_r:exported_system_prop:s0
+persist.sys.camera.log.                          u:object_r:exported_system_prop:s0
+oplus.debug.nvram.enable                         u:object_r:exported_system_prop:s0
+persist.camera.                                  u:object_r:exported_camera_prop:s0
+ro.camera.                                       u:object_r:system_oplus_camera_prop:s0
+ro.oppo.                                         u:object_r:system_oplus_camera_prop:s0
+ro.oplus.camera.                                 u:object_r:system_oplus_camera_prop:s0
+ro.oplus.system.camera.                          u:object_r:system_oplus_camera_prop:s0
+oplus.camera.                                    u:object_r:system_oplus_camera_prop:s0
+oppo.camera.                                     u:object_r:system_oplus_camera_prop:s0
+
+# Display
+persist.oplus.display.vrr.adfr                   u:object_r:exported_system_prop:s0
+ro.oplus.backlight.threhold                      u:object_r:exported_system_prop:s0
+ro.oplus.bl.disable.dre.enable                   u:object_r:exported_system_prop:s0
+ro.oplus.display.                                u:object_r:exported_system_prop:s0
+ro.oplus.silky.brightness.delay                  u:object_r:exported_system_prop:s0
+
+# Fingerprint
+gf.debug.                                        u:object_r:system_oplus_fingerprint_prop:s0
+oplus.fingerprint.                               u:object_r:system_oplus_fingerprint_prop:s0
+oplus.goodix.fp                                  u:object_r:system_oplus_fingerprint_prop:s0
+oplus.optical.                                   u:object_r:system_oplus_fingerprint_prop:s0
+
+# Fs-verity
+pm.dexopt.dm.require_fsverity   		 u:object_r:exported_pm_prop:s0
+pm.dexopt.dm.require_manifest   		 u:object_r:exported_pm_prop:s0
+
+# Hardware
+ro.build.release_type                            u:object_r:exported_default_prop:s0 exact string
+ro.chipname                                      u:object_r:exported_default_prop:s0 exact string
+ro.mediatek.platform                             u:object_r:exported_default_prop:s0 exact string
+ro.version.confidential                          u:object_r:exported_default_prop:s0 exact string
+ro.hardware.soc.manufacturer                     u:object_r:exported_default_prop:s0 exact string
+ro.hardware.chipname                             u:object_r:exported_default_prop:s0 exact string
+
+# Logging
+persist.sys.assert.panic                         u:object_r:exported_system_prop:s0
+persist.service.debuggable                       u:object_r:exported_system_prop:s0
+
+# Modem GPS
+persist.vendor.oplus.radio.                      u:object_r:exported_system_prop:s0
+persist.oplus.network.                           u:object_r:exported_system_prop:s0
+persist.sys.gps.lpp                              u:object_r:exported_system_prop:s0
+ro.oplus.operator                                u:object_r:exported_system_prop:s0
+ro.oplus.mtk_gps_L1L5                            u:object_r:exported_system_prop:s0
+ro.oplus.mtk_gps_mpe                             u:object_r:exported_system_prop:s0
+ro.telephony.sim.count                           u:object_r:telephony_config_prop:s0 exact int
+
+# Oplus Project
+ro.oplus.image.                                  u:object_r:system_oplus_project_prop:s0
+ro.oplus.market.name                             u:object_r:system_oplus_project_prop:s0
+ro.oplus.version.                                u:object_r:system_oplus_project_prop:s0
+ro.product.hw                                    u:object_r:system_oplus_project_prop:s0
+ro.separate.soft                                 u:object_r:system_oplus_project_prop:s0
+ro.product.marketname                            u:object_r:build_prop:s0
+ro.infinity.device                               u:object_r:build_prop:s0
+
+# Realme Parts
+persist.cabc_profile                             u:object_r:system_cabc_prop:s0
+
+# Sensors
+persist.sys.oppo.fusionlight                     u:object_r:system_oplus_sensor_prop:s0
+persist.sys.oppo.proximity                       u:object_r:system_oplus_sensor_prop:s0
+
+# Touch
+persist.sys.tpic.                                u:object_r:system_oplus_touch_prop:s0
+
+# UI specific
+ro.build.expect.vendor                           u:object_r:exported_default_prop:s0
+
+# Vendor aware available
+ro.vendor.aware_available                        u:object_r:exported_default_prop:s0
+
+# Zygote
+ro.zygote.preload.enable                         u:object_r:zygote_config_prop:s0 exact bool

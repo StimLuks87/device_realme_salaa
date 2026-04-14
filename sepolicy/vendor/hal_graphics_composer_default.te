@@ -1,0 +1,19 @@
+allow hal_graphics_composer_default {
+    mtk_hal_pq_hwservice
+    hidl_memory_hwservice
+}:hwservice_manager { find };
+
+allow hal_graphics_composer_default mnt_vendor_file:dir search;
+allow hal_graphics_composer_default vendor_display_vendor_data_file:dir create_dir_perms;
+allow hal_graphics_composer_default vendor_display_vendor_data_file:file create_file_perms;
+
+r_dir_file(hal_graphics_composer_default, vendor_proc_oplus_version)
+r_dir_file(hal_graphics_composer_default, vendor_sysfs_graphics)
+r_dir_file(hal_graphics_composer_default, vendor_proc_display)
+r_dir_file(hal_graphics_composer_default, persist_data_file)
+rw_dir_file(hal_graphics_composer_default, gpu_device)
+rw_dir_file(hal_graphics_composer_default, sysfs_leds)
+
+binder_call(hal_graphics_composer_default, mtk_hal_pq)
+
+get_prop(hal_graphics_composer_default, vendor_oplus_prop)

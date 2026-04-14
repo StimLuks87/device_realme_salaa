@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2018-2020 Oplus. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Reserve
+/dev/block/bootdevice/by-name/oplusreserve*         0660 root   system
+
+# Charger
+/sys/class/oplus_chg/*  mmi_charging_enable         0660 system system
+
+# WiFi
+firmware_directories /odm/etc/wifi/

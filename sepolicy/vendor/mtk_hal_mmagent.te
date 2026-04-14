@@ -1,0 +1,3 @@
+allow mtk_hal_mmagent mtk_hal_camera:dir search;
+allow mtk_hal_mmagent mtk_hal_camera:file r_file_perms;
+allow mtk_hal_mmagent mtk_hal_camera:process getattr;

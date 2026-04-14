@@ -1,0 +1,2 @@
+get_prop(thermal_manager, vendor_thermal_prop)
+set_prop(thermal_manager, vendor_thermal_prop)

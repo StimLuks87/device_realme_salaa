@@ -1,0 +1,109 @@
+# Audio
+ro.config.media_vol_steps=15
+ro.config.vc_call_vol_steps=10
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+ro.mtk_cam_dualzoom_support=1
+ro.mtk_cam_stereo_camera_support=0
+ro.mtk_cam.mfb.ultimate=1
+
+# Display
+persist.sys.enable_mtk_scp_dump=1
+ro.mtk_display_ovl_support=1
+ro.mtk_pq.ctrld_dpi_support=1
+qemu.hw.mainkeys=0
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Misc
+persist.vendor.pms_removable=1
+persist.vendor.vzw_device_type=0
+persist.vendor.mdlog.flush_log_ratio=72340194296137244
+ro.mtk_key_manager_support=1
+ro.support_one_handed_mode=true
+ro.mediatek.version.branch=alps-mp-s0.mssi1.tc16sp-pr6
+
+# Memory
+ro.config.per_app_memcg=false
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+sys.usb.mtp.batchcancel=1
+
+# Radio
+persist.vendor.radio.telecom.vibrate=0
+
+# RIL
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Fastbootd
+ro.fastbootd.available=true
+
+# GPU Performance
+ro.mtk_gpu_optimizations=1
+ro.mtk_perf_dds_cpu=1
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+persist.mm.enable.prefetch=true
+ro.min_pointer_dur=8
+
+# Storage
+persist.sys.fuse.passthrough.enable=true
+
+# IPO
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+
+# iorapd
+ro.iorapd.enable=false
+
+# Sensor
+persist.sys.oppo.fusionlight=true
+persist.sys.oppo.proximity=true
+
+# HWUI
+ro.hwui.disable_sc=false
+ro.hwui.render_ahead=20
+
+# Hardware Platform
+ro.hardware.chipname=mt6785
+ro.hardware.egl=meow
+ro.hardware.vulkan=mt6785
+ro.hardware.hwcomposer=mt6785
+ro.hardware.soc.manufacturer=mtk
+ro.hardware.gatekeeper=trustonic
+ro.hardware.kmsetkey=trustonic
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# WiFi
+persist.vendor.wfc.sys_wfc_support=1
+ro.mediatek.wlan.p2p=1
+ro.mediatek.wlan.wsc=1
+mediatek.wlan.ctia=0
+
+# InfinityX phoneinfo props
+ro.infinity.battery=5000 mAh
+ro.infinity.camera=48MP + 8MP + 2MP + 2MP
+ro.infinity.display=1080 x 2400, 90Hz
+ro.infinity.soc=Mediatek Helio G95

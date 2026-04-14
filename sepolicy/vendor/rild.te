@@ -1,0 +1,3 @@
+get_prop(rild, vendor_mtk_telephony_sensitive_prop)
+get_prop(rild, vendor_mtk_radio_prop)
+get_prop(rild, vendor_oplus_radio_prop)

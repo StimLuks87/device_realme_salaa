@@ -1,0 +1,5 @@
+allow fsck sysfs_devices_block:dir search;
+allow fsck sysfs_devices_block:file r_file_perms;
+allow fsck_untrusted sysfs_devices_block:dir search;
+allow fsck_untrusted sysfs_devices_block:file r_file_perms;
+dontaudit fsck_untrusted vold_device:blk_file ioctl;

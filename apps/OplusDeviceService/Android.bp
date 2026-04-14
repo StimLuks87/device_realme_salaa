@@ -1,0 +1,32 @@
+//
+// SPDX-FileCopyrightText: 2019 The Android Open Source Project
+// SPDX-FileCopyrightText: 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "OplusDeviceService",
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+
+    certificate: "platform",
+    platform_apis: true,
+    optimize: {
+        enabled: false,
+    },
+    required: [
+        "privapp-permissions-oplus-device",
+    ],
+
+    system_ext_specific: true,
+    privileged: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-oplus-device",
+    sub_dir: "permissions",
+    src: "privapp-permissions-oplus-device.xml",
+    filename_from_src: true,
+    system_ext_specific: true,
+}

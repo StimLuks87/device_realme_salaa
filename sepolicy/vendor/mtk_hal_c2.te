@@ -1,0 +1,5 @@
+allow mtk_hal_c2 gpu_device:chr_file rw_file_perms;
+allow mtk_hal_c2 ion_device:chr_file rw_file_perms;
+allow mtk_hal_c2 sysfs_boot_mode:file r_file_perms;
+allow mtk_hal_c2 graphics_device:dir search;
+allow mtk_hal_c2 graphics_device:chr_file rw_file_perms;

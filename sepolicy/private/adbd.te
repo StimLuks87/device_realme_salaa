@@ -1,0 +1,2 @@
+get_prop(adbd, adbd_prop)
+get_prop(adbd, system_adbd_prop)

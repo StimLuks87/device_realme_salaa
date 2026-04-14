@@ -1,0 +1,112 @@
+# Audio
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
+
+# BPF
+ro.bpf.kver_override=5.10.247
+
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.device_id.vendor_id=0x0046
+bluetooth.profile.a2dp.source.enabled?=true
+bluetooth.profile.avrcp.target.enabled?=true
+bluetooth.profile.bap.broadcast.assist.enabled?=true
+bluetooth.profile.bap.unicast.client.enabled?=true
+bluetooth.profile.bas.client.enabled?=true
+bluetooth.profile.ccp.server.enabled?=true
+bluetooth.profile.csip.set_coordinator.enabled?=true
+bluetooth.profile.gatt.enabled?=true
+bluetooth.profile.hap.client.enabled?=true
+bluetooth.profile.hfp.ag.enabled?=true
+bluetooth.profile.hid.device.enabled?=true
+bluetooth.profile.hid.host.enabled?=true
+bluetooth.profile.map.server.enabled?=true
+bluetooth.profile.mcp.server.enabled?=true
+bluetooth.profile.opp.enabled?=true
+bluetooth.profile.pan.nap.enabled?=true
+bluetooth.profile.pan.panu.enabled?=true
+bluetooth.profile.pbap.server.enabled?=true
+bluetooth.profile.sap.server.enabled?=true
+bluetooth.profile.vcp.controller.enabled?=true
+persist.bluetooth.enable_power_stats=false
+persist.bluetooth.a2dp_aac_abr.enable=true
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.bluetooth.a2dp_offload.disabled=true
+ro.bluetooth.a2dp_offload.supported=true
+
+# Camera
+ro.camera.notify_nfc=1
+ro.camera.sound.forced=0
+
+# Incremental
+ro.incremental.enable=yes
+
+# LMK
+ro.lmk.kill_timeout_ms=100
+ro.lmk.psi_complete_stall_ms=70
+ro.lmk.psi_partial_stall_ms=70
+ro.lmk.swap_free_low_percentage=30
+ro.lmk.swap_util_max=90
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=2
+
+# RKPD
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
+
+# RIL
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=9,9,9,9
+ro.telephony.iwlan_operation_mode=AP-assisted
+ro.telephony.sim.count=2
+telephony.lteOnCdmaDevice=0
+telephony.active_modems.max_count=2
+
+# Platform
+ro.hardware=mt6785
+
+# Kernel
+ro.logd.kernel=false
+
+# HWUI
+debug.hwui.render_dirty_regions=false
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.target_cpu_time_percent=40
+debug.hwui.trace_gpu_resources=false
+debug.hwui.use_hint_manager=true
+debug.hwui.skia_atrace_enabled=false
+
+# Platform
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6785
+
+# Radio FM
+ro.fm.band=1
+ro.fm.chip=0x6631
+ro.fm.fake_chan_0=9210 -205
+ro.fm.fake_chan_1=9600 -152
+ro.fm.fake_chan_2=10400 -152
+ro.fm.fake_chan_3=10750 -205
+ro.fm.fake_chans=4
+ro.fm.high_band=1080
+ro.fm.low_band=875
+ro.fm.max_scan_num=40
+ro.fm.rssi_th_l2=-102
+ro.fm.scan_sort=0
+ro.fm.seek_lev=4
+ro.fm.seek_space=1
+ro.fm.short_ana_sup=1
+
+# WiFi
+persist.data.iwlan.ipsec.ap=1
+wifi.supplicant_scan_interval=15
+wifi.interface=wlan0
+wifi.direct.interface=p2p0
+wifi.tethering.interface=ap0
+
+# Zygote
+ro.zygote.preload.enable=0
+zygote.critical_window.minute=10
+persist.device_config.runtime_native.usap_pool_enabled=true

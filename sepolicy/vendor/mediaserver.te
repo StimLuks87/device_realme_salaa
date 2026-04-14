@@ -1,0 +1,2 @@
+get_prop(mediaserver, vendor_mtk_ct_ir_engmode_prop)
+get_prop(mediaserver, vendor_media_prop)

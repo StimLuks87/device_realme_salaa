@@ -1,0 +1,2 @@
+typeattribute dex2oat mlstrustedsubject;
+dontaudit dex2oat privapp_data_file:dir search; 

@@ -1,0 +1,4 @@
+allow servicemanager hal_thermal_default:process { getattr };
+allow servicemanager hal_power_default:binder call;
+allow servicemanager surfaceflinger:binder call;
+allow servicemanager mediaswcodec:binder call;

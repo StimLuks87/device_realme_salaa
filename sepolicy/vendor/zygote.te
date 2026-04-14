@@ -1,0 +1,4 @@
+dontaudit zygote vendor_variant_prop:file read;
+allow zygote self:capability sys_nice;
+allow zygote self:file r_file_perms;
+allow zygote self:lnk_file r_file_perms;

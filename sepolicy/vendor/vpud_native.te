@@ -1,0 +1,2 @@
+allow vpud_native proc_thermal:dir search;
+get_prop(vpud_native, vendor_thermal_prop)
