@@ -143,16 +143,30 @@ void set_device_props(void){
                 model="";
                 fingerprint="";
                 market_name="";
-		}
+	}
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
+    if (!fingerprint.empty()) {
+        property_override("ro.build.fingerprint", fingerprint.c_str());
+
+        static const std::vector<std::string> prop_types = {
+            "",        "bootimage.", "odm.",    "odm_dlkm.",   "product.",
+            "system.", "system_ext.", "vendor.", "vendor_dlkm."
+        };
+
+        for (const auto& source : prop_types) {
+            std::string prop = "ro." + source + "build.fingerprint";
+            property_override(prop.c_str(), fingerprint.c_str());
+        }
+    }
+
     set_ro_build_prop("device", device);
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", model);
     set_ro_build_prop("product", model, false);
     property_override("ro.product.device", device.c_str());
     property_override("ro.vendor.device", device.c_str());
+    property_override("ro.infinity.device", device.c_str());
     property_override("bluetooth.device.default_name", market_name.c_str());
     property_override("vendor.usb.product_string", market_name.c_str());
     property_override("ro.product.marketname", market_name.c_str());

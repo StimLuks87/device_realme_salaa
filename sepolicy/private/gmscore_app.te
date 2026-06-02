@@ -1,7 +1,9 @@
 allow gmscore_app apex_mnt_dir:dir search; 
 allow gmscore_app apex_info_file:file getattr;
+allow gmscore_app apk_data_file:file { read getattr open };
 allow gmscore_app configfs:dir search;
 allow gmscore_app dex2oat_exec:lnk_file getattr;
+allow gmscore_app incremental_prop:file read;
 allow gmscore_app linkerconfig_file:dir getattr;
 allow gmscore_app metadata_file:dir getattr;
 allow gmscore_app vendor_keylayout_file:dir getattr;

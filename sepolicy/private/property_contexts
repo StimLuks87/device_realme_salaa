@@ -44,11 +44,11 @@ pm.dexopt.dm.require_manifest   		 u:object_r:exported_pm_prop:s0
 
 # Hardware
 ro.build.release_type                            u:object_r:exported_default_prop:s0 exact string
-ro.chipname                                      u:object_r:exported_default_prop:s0 exact string
 ro.mediatek.platform                             u:object_r:exported_default_prop:s0 exact string
 ro.version.confidential                          u:object_r:exported_default_prop:s0 exact string
 ro.hardware.soc.manufacturer                     u:object_r:exported_default_prop:s0 exact string
 ro.hardware.chipname                             u:object_r:exported_default_prop:s0 exact string
+ro.hardware.kmsetkey                             u:object_r:exported_default_prop:s0 exact string
 
 # Logging
 persist.sys.assert.panic                         u:object_r:exported_system_prop:s0
@@ -87,6 +87,10 @@ ro.build.expect.vendor                           u:object_r:exported_default_pro
 
 # Vendor aware available
 ro.vendor.aware_available                        u:object_r:exported_default_prop:s0
+
+# RKPD
+remote_provisioning.enable_rkpd                  u:object_r:remote_prov_prop:s0
+remote_provisioning.hostname                     u:object_r:remote_prov_prop:s0
 
 # Zygote
 ro.zygote.preload.enable                         u:object_r:zygote_config_prop:s0 exact bool

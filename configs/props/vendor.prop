@@ -75,7 +75,6 @@ ro.vendor.smvr.p2batch.fhd=4
 debug.mediatek.disp_decompress=1
 debug.cpurend.vsync=false
 debug.renderengine.backend=skiaglthreaded
-renderthread.skia.reduceopstasksplitting=true
 
 # FM Radio
 persist.vendor.connsys.fm_chipid=mt6631
@@ -222,10 +221,6 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_refresh_reset_by_modem=1
 ro.vendor.radio.max.multisim=dsds
 
-# RKPD
-remote_provisioning.enable_rkpd=true
-remote_provisioning.hostname=remoteprovisioning.googleapis.com
-
 # LMK
 ro.lmk.kill_timeout_ms=100
 ro.lmk.psi_complete_stall_ms=70
@@ -238,7 +233,6 @@ ro.lmk.thrashing_limit_decay=2
 # IMS
 telephony.lteOnCdmaDevice=0
 telephony.active_modems.max_count=2
-persist.data.iwlan.ipsec.ap=1
 persist.vendor.anr.enhancement=0
 persist.vendor.ims_support=1
 persist.vendor.mtk.volte.enable=1
@@ -277,6 +271,10 @@ vendor.usb.diag.func.name=ffs
 # Sensor
 ro.vendor.mtk.sensor.support=yes
 
+# Soc
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6785
+
 # Thermal
 vendor.thermal.config=thermal_info_config.json
 
@@ -307,19 +305,7 @@ ro.vendor.mtk_wfd_support=1
 ro.vendor.wfd.dummy.enable=0
 ro.vendor.wfd.iframesize.level=0
 
-# Hardware Platform
-ro.hardware=mt6785
-ro.hardware.chipname=mt6785
-ro.hardware.egl=meow
-ro.hardware.vulkan=mt6785
-ro.hardware.hwcomposer=mt6785
-ro.hardware.soc.manufacturer=mtk
-ro.hardware.gatekeeper=trustonic
-ro.hardware.kmsetkey=trustonic
-
 # HWUI
-ro.hwui.disable_sc=false
-ro.hwui.render_ahead=2
 debug.hwui.render_dirty_regions=false
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.target_cpu_time_percent=30
@@ -329,8 +315,6 @@ debug.hwui.skia_atrace_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 
 # Platform
-ro.soc.manufacturer=MediaTek
-ro.soc.model=MT6785
 ro.oplus.image.base.version=20682.2.4.2024040112144924504550
 ro.oplus.image.vendor.version=.da5722b8
 ro.oplus.version.base=20682.2.4.2024040112144924504550
@@ -347,7 +331,3 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
-
-# Zygote
-zygote.critical_window.minute=10
-persist.device_config.runtime_native.usap_pool_enabled=true

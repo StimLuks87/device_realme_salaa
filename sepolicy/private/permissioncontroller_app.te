@@ -1,0 +1,2 @@
+allow permissioncontroller_app incremental_prop:file read;
+allow permissioncontroller_app apk_data_file:file { read getattr open };
