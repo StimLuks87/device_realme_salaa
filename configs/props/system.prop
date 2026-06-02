@@ -1,6 +1,8 @@
 # Audio
-ro.config.media_vol_steps=15
+ro.config.media_vol_steps=10
 ro.config.vc_call_vol_steps=10
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
 
 # Brand
 Build.BRAND=MTK
@@ -9,6 +11,8 @@ Build.BRAND=MTK
 ro.mtk_cam_dualzoom_support=1
 ro.mtk_cam_stereo_camera_support=0
 ro.mtk_cam.mfb.ultimate=1
+ro.camera.notify_nfc=1
+ro.camera.sound.forced=0
 
 # Display
 persist.sys.enable_mtk_scp_dump=1
@@ -41,6 +45,8 @@ sys.usb.mtp.batchcancel=1
 persist.vendor.radio.telecom.vibrate=0
 
 # RIL
+ro.telephony.sim.count=2
+ro.vendor.mtk_telephony_add_on_policy=0
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
@@ -58,6 +64,7 @@ ro.mtk_perf_dds_cpu=1
 
 # Kernel
 ro.kernel.zio=38,108,105,16
+ro.logd.kernel=false
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
@@ -78,32 +85,29 @@ ro.iorapd.enable=false
 persist.sys.oppo.fusionlight=true
 persist.sys.oppo.proximity=true
 
-# HWUI
-ro.hwui.disable_sc=false
-ro.hwui.render_ahead=20
-
-# Hardware Platform
-ro.hardware.chipname=mt6785
-ro.hardware.egl=meow
-ro.hardware.vulkan=mt6785
-ro.hardware.hwcomposer=mt6785
-ro.hardware.soc.manufacturer=mtk
-ro.hardware.gatekeeper=trustonic
-ro.hardware.kmsetkey=trustonic
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # WiFi
+mediatek.wlan.ctia=0
 persist.vendor.wfc.sys_wfc_support=1
 ro.mediatek.wlan.p2p=1
 ro.mediatek.wlan.wsc=1
-mediatek.wlan.ctia=0
+wifi.supplicant_scan_interval=15
+wifi.interface=wlan0
+wifi.direct.interface=p2p0
+wifi.tethering.interface=ap0
 
 # InfinityX phoneinfo props
 ro.infinity.battery=5000 mAh
 ro.infinity.camera=48MP + 8MP + 2MP + 2MP
 ro.infinity.display=1080 x 2400, 90Hz
 ro.infinity.soc=Mediatek Helio G95
+
+# Incremental
+ro.incremental.enable=1
+
+# Zygote
+ro.zygote.preload.enable=0

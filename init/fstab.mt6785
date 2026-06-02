@@ -14,8 +14,8 @@ vendor                           /vendor        ext4       ro                   
 vendor                           /vendor        erofs      ro                      wait,avb,logical,first_stage_mount
 product                          /product       ext4       ro                      wait,logical,first_stage_mount
 product                          /product       erofs      ro                      wait,logical,first_stage_mount
-odm                              /odm           ext4       ro                      wait,logical,first_stage_mount
-odm                              /odm           erofs      ro                      wait,logical,first_stage_mount
+odm                              /odm           ext4       ro                      wait,logical,first_stage_mount,nofail
+odm                              /odm           erofs      ro                      wait,logical,first_stage_mount,nofail
 system_ext                       /system_ext    ext4       ro                      wait,logical,first_stage_mount
 system_ext                       /system_ext    erofs      ro                      wait,logical,first_stage_mount
 

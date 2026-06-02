@@ -1261,7 +1261,6 @@ odm/firmware/awinic_haptic_params.bin
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|8c5d8e93ad8a03c6de5aaaad8ef58d53e75c8378
 
 # GNSS
-system/bin/lbs_dbg
 vendor/bin/bip
 vendor/bin/ipsec_mon
 vendor/bin/lbs_hidl_service
@@ -1789,7 +1788,6 @@ vendor/bin/mnld
 vendor/bin/xcap
 vendor/bin/mrdump_tool
 vendor/bin/muxreport
-vendor/bin/rttv
 vendor/bin/stp_dump3
 vendor/etc/apdb/APDB_MT6785_S01__W2214
 vendor/etc/apdb/APDB_MT6785_S01__W2214_ENUM
@@ -2062,7 +2060,6 @@ vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so

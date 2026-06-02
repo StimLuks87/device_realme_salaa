@@ -37,7 +37,7 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
-on property:init.svc.vendor.charger=running
+on charger
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
@@ -69,6 +69,9 @@ on property:init.svc.vendor.charger=running
 
     # Stop bootprof
     write /proc/bootprof "0"
+
+    chown system system /dev/graphics/fb0
+    chown system system /dev/dri/card0
 
 on early-fs
     write /proc/bootprof "INIT:early-fs"    
@@ -956,18 +959,6 @@ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
-on zygote-start
-    stop statsd
-
-service statsd /apex/com.android.os.statsd/bin/statsd
-    class main
-    socket statsdw dgram+passcred 0222 statsd statsd
-    user statsd
-    group statsd log
-    task_profiles ProcessCapacityHigh HighEnergySaving
-    override
-    disabled
-
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
@@ -980,3 +971,21 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     task_profiles ProcessCapacityHigh HighPerformance
     onrestart restart audioserver
+
+on property:ro.boot.product.vendor.sku=nfc
+    start vendor.nfc_hal_service
+    start mtk_secure_element_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    disabled
+    class hal
+    user nfc
+    group nfc
+
+service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+    override
+    disabled
+    class hal
+    user secure_element
+    group secure_element

@@ -41,7 +41,7 @@ PRODUCT_USES_DEFAULT_ART_CONFIG := true
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 WITH_DEXPREOPT_DEBUG_INFO := false
 WITH_DEXPREOPT := true
 USE_DEX2OAT_DEBUG := false
@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
 # FMRadio
 PRODUCT_PACKAGES += \
     FMRadio
-
-# BesLoudness
-PRODUCT_PACKAGES += \
-    BesLoudness
 
 # Biometrics
 PRODUCT_PACKAGES += \
@@ -153,11 +149,11 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.mediatek \
-    android.hardware.health-service.mediatek-recovery
+    android.hardware.health-service.example \
+    android.hardware.health-service.example-recovery
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_salaa)
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_salaa)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -416,7 +412,6 @@ PRODUCT_PACKAGES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    libwifi-hal-wrapper:64  \
     wpa_supplicant \
     hostapd
 
