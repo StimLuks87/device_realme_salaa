@@ -1,3 +1,31 @@
+# Incremental
+get_prop(gmscore_app, incremental_prop)
+
+# To get signature of an APK installed on Incremental File System, and fill in data
+# blocks and get the filesystem state
+allowxperm gmscore_app apk_data_file:file ioctl {
+  INCFS_IOCTL_READ_SIGNATURE
+  INCFS_IOCTL_FILL_BLOCKS
+  INCFS_IOCTL_GET_FILLED_BLOCKS
+  INCFS_IOCTL_GET_BLOCK_COUNT
+  F2FS_IOC_GET_FEATURES
+  F2FS_IOC_GET_COMPRESS_BLOCKS
+  F2FS_IOC_COMPRESS_FILE
+  F2FS_IOC_DECOMPRESS_FILE
+  F2FS_IOC_RELEASE_COMPRESS_BLOCKS
+  F2FS_IOC_RESERVE_COMPRESS_BLOCKS
+  FS_IOC_SETFLAGS
+  FS_IOC_GETFLAGS
+};
+
+allow gmscore_app apex_mnt_dir:dir search; 
+allow gmscore_app apex_info_file:file getattr;
+allow gmscore_app configfs:dir search;
+allow gmscore_app linkerconfig_file:dir getattr;
+allow gmscore_app metadata_file:dir getattr;
+allow gmscore_app vendor_keylayout_file:dir getattr;
 allow gmscore_app vendor_firmware_file:dir r_dir_perms;
 allow gmscore_app file_contexts_file:file r_file_perms;
+allow gmscore_app proc_filesystems:file r_file_perms;
+
 get_prop(gmscore_app, system_oplus_camera_prop)

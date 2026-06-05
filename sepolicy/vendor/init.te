@@ -14,7 +14,7 @@ allow init proc_sched_migration_cost_ns:file rw_file_perms;
 allow init persist_engineer_file:filesystem { relabelto relabelfrom };
 allow init per_boot_file:file ioctl;
 allow init persist_data_file:file setattr;
-allow init tmpfs:blk_file read;
+allow init tmpfs:blk_file { read open };
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 
 get_prop(init, vendor_variant_prop)

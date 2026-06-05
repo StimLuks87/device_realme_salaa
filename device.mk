@@ -133,6 +133,7 @@ $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_
 
 # Fastboot
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot-service.example_recovery \
     fastbootd
 
 # Gatekeeper
@@ -177,19 +178,19 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libsoft_attestation_cert.vendor:64 \
     libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl \
+    libkeystore-wifi-hidl
 
-# Media (C2)
+# Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Seccomp policy
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.c2inputsurface=-1 \
     debug.stagefright.ccodec=4
+
+# Seccomp policy
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 # NFC
 PRODUCT_PACKAGES += \

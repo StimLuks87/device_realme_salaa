@@ -1,3 +1,4 @@
 allow vold self:capability sys_resource;
 allow vold mnt_vendor_file:dir r_dir_perms;
 allow vold oplus_reserve_file:dir r_dir_perms;
+dontaudit vold persist_data_file:dir r_dir_perms;

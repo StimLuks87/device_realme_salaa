@@ -1,12 +1,23 @@
-typeattribute system_app netdomain;
-allow system_app proc_asound:dir search;
-allow system_app proc_asound:file r_file_perms;
-allow system_app proc_pagetypeinfo:file r_file_perms;
+# Incremental
+get_prop(system_app, incremental_prop)
+# allow apps like settings to check the file signature of an apk installed on
+# the Incremental File System, fill missing blocks and get the app status and loading progress
+allowxperm system_app apk_data_file:file ioctl {
+  INCFS_IOCTL_READ_SIGNATURE
+  INCFS_IOCTL_FILL_BLOCKS
+  INCFS_IOCTL_GET_BLOCK_COUNT
+  INCFS_IOCTL_GET_FILLED_BLOCKS
+};
+
+dontaudit system_app zygote:unix_stream_socket getopt;
+dontaudit system_app proc_pagetypeinfo:file r_file_perms;
+dontaudit system_app proc_asound:dir search;
+dontaudit system_app proc_asound:file r_file_perms;
+dontaudit system_app netd:binder call;
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
-allow system_app system_server:binder call;
-allow system_app zygote:unix_stream_socket getopt;
 allow system_app pinner_service:service_manager find;
+allow system_app system_server:binder call;
 allow system_app hal_audio_default:binder call;
 allow system_app hal_health_default:binder call;
 allow system_app hal_memtrack_default:binder call;
@@ -21,7 +32,5 @@ allow system_app mtk_hal_usb:binder call;
 allow system_app mtk_hal_memtrack:binder call;
 allow system_app wificond:binder call;
 allow system_app vold:binder call;
-dontaudit system_app netd:binder call;
-
 get_prop(system_app, vendor_mtk_wmt_prop)
 get_prop(system_app, vendor_mtk_default_prop)
