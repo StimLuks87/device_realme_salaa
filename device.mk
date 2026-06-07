@@ -25,11 +25,14 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/infinity-priv/keys/releasekey
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# AAPT
+# Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+
+# AAPT config
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
@@ -45,6 +48,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 WITH_DEXPREOPT_DEBUG_INFO := false
 WITH_DEXPREOPT := true
 USE_DEX2OAT_DEBUG := false
+DEX_PREOPT_DEFAULT := generate-vdex-and-image
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true

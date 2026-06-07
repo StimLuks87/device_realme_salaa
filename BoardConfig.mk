@@ -129,6 +129,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
 
+# Treble
+BOARD_VNDK_VERSION := current
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_KEY_PATH := vendor/infinity-priv/keys/vbmeta.pem
