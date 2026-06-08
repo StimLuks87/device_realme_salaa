@@ -308,7 +308,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
+    android.hardware.power-service.pixel-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 # Power | Dummy mtkperf lib
@@ -380,7 +380,7 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/google/pixel/power-libperfmgr/libperfmgr \
     hardware/mediatek/libaedv \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/wlan/wifi_hal \

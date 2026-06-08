@@ -1,1 +1,4 @@
+allow surfaceflinger sysfs_fpsgo:dir search;
+allow surfaceflinger sysfs_fpsgo:file rw_file_perms;
+
 binder_call(surfaceflinger, mtk_hal_mmagent)

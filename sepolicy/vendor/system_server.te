@@ -12,3 +12,5 @@ allow system_server vendor_proc_oplus_fastchg:dir search;
 allow system_server vendor_proc_oplus_fastchg:file r_file_perms;
 allow system_server vendor_sysfs_battery_supply:dir search;
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+allow system_server sysfs_fpsgo:dir search;
+allow system_server sysfs_fpsgo:file rw_file_perms;

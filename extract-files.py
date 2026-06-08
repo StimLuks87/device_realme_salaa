@@ -43,8 +43,6 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_odm_suffix,
     (
         'vendor.mediatek.hardware.videotelephony@1.0',
-        'vendor.mediatek.hardware.apuware.xrp@1.0',
-        'vendor.mediatek.hardware.apuware.utils@2.0',
     ): lib_fixup_vendor_suffix,
 }
 

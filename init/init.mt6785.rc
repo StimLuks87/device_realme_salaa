@@ -879,6 +879,20 @@ on boot
     write /sys/devices/virtual/oplus_chg/usb/otg_switch 1
     write /sys/class/power_supply/usb/otg_switch 1
 
+    # FpsGo
+    chown system graphics /sys/kernel/fpsgo/common/fpsgo_enable
+    chmod 0664 /sys/kernel/fpsgo/common/fpsgo_enable
+    chown system graphics /sys/kernel/fpsgo/fstb/fpsgo_status
+    chmod 0664 /sys/kernel/fpsgo/fstb/fpsgo_status
+    chown system graphics /sys/kernel/fpsgo/fstb/fstb_fps_list
+    chmod 0664 /sys/kernel/fpsgo/fstb/fstb_fps_list
+    chown system graphics /sys/kernel/fpsgo/fstb/set_render_max_fps
+    chmod 0664 /sys/kernel/fpsgo/fstb/set_render_max_fps
+    chown system graphics /sys/kernel/fpsgo/fstb/adopt_low_fps
+    chmod 0664 /sys/kernel/fpsgo/fstb/adopt_low_fps
+    chown system graphics /sys/module/ged/parameters/gx_dfps
+    chmod 0664 /sys/module/ged/parameters/gx_dfps
+
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon

@@ -19,6 +19,7 @@ persist.sys.enable_mtk_scp_dump=1
 ro.mtk_display_ovl_support=1
 ro.mtk_pq.ctrld_dpi_support=1
 qemu.hw.mainkeys=0
+qemu.sf.lcd_density=440
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true

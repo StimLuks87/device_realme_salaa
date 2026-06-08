@@ -27,6 +27,9 @@ allowxperm platform_app apk_data_file:file ioctl {
   FS_IOC_GETFLAGS
 };
 
+allow platform_app sysfs_fpsgo:dir search;
+allow platform_app sysfs_fpsgo:file r_file_perms;
+
 get_prop(platform_app, bluetooth_finder_prop)
 get_prop(platform_app, vendor_audio_prop)
 dontaudit platform_app usb_uvc_enabled_prop:file r_file_perms;

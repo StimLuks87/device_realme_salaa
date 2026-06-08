@@ -60,7 +60,7 @@
 /data/vendor/FactoryTestReport(/.*)?                                                                    u:object_r:factorytestreport_vendor_data_file:s0
 /data/vendor/fingerprint(/.*)?                                                                          u:object_r:oplus_fingerprint_file:s0
 /data/vendor/optical_fingerprint(/.*)?                                                                  u:object_r:oplus_fingerprint_file:s0
-/mnt/vendor/persist/fingerprint/jiiov(/.*)?	                                                            u:object_r:factorytestreport_vendor_data_file:s0
+/mnt/vendor/persist/fingerprint/jiiov(/.*)?	                                                        u:object_r:factorytestreport_vendor_data_file:s0
 /mnt/vendor/persist/fingerprint(/.*)?                                                                   u:object_r:oplus_fingerprint_file:s0
 /mnt/vendor/persist/cali_data\.so                                                                       u:object_r:oplus_fingerprint_file:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                  u:object_r:hal_fingerprint_default_exec:s0
@@ -79,3 +79,4 @@
 
 # Power
 /dev/socket/pps                                                                                         u:object_r:pps_socket:s0
+/vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                                       u:object_r:hal_power_default_exec:s0
