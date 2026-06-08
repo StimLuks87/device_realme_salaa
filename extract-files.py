@@ -18,9 +18,6 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
-import extract_utils.tools
-extract_utils.tools.DEFAULT_PATCHELF_VERSION = '0_17_2'
-
 namespace_imports = [
     'device/realme/salaa',
     'hardware/mediatek',
@@ -54,6 +51,7 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     # Audio
     'vendor/lib/hw/audio.primary.mt6785.so': blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libalsautils.so', 'libalsautils-v31.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
@@ -149,9 +147,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/hwcomposer.mt6785.so': blob_fixup()
          .add_needed('libprocessgroup_shim.so'),
 
-    # Fix SONAMEs
-    ('vendor/lib/libspeech_enh_lib.so', 'vendor/lib/libalsautils-v31.so', 'vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so', 'vendor/lib64/liboppo_blank_algo.so', 'vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so', 'vendor/lib64/libwifi-hal-mtk.so'): blob_fixup()
-        .fix_soname(),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

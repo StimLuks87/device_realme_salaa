@@ -3,7 +3,7 @@ persist.vendor.audio.tuning.def_path         u:object_r:vendor_audio_tuning_prop
 persist.vendor.audiohal.aurisys.pcm_dump_on  u:object_r:vendor_audio_tuning_prop:s0
 persist.vendor.audiohal.p2w_dump_on          u:object_r:vendor_audio_tuning_prop:s0
 persist.vendor.audiohal.pcm_mixer_dump_on    u:object_r:vendor_audio_tuning_prop:s0
-ro.vendor.connsys.dedicated.log.port         u:object_r:vendor_mtk_default_prop:s0
+vendor.audiomediatek.                        u:object_r:vendor_mtk_audio_prop:s0
 
 # Camera
 persist.vendor.camera.privapp.list           u:object_r:vendor_persist_camera_prop:s0
@@ -39,6 +39,14 @@ persist.vendor.audio.dolby.tws_tuning        u:object_r:vendor_audio_prop:s0
 ro.vendor.audio.moto_sst_supported           u:object_r:vendor_audio_prop:s0
 ro.vendor.dolby.no_custom_profile            u:object_r:vendor_audio_prop:s0
 
+# MDP properties
+vendor.dp.rdma.workaround.enable             u:object_r:vendor_mtk_mdp_prop:s0
+vendor.dp.reduceconfig.disable               u:object_r:vendor_mtk_mdp_prop:s0
+ro.vendor.dp.bypass.mdp                      u:object_r:vendor_mtk_mdp_prop:s0
+
+# MTK connsys log feature
+ro.vendor.connsys.dedicated.log.port         u:object_r:vendor_mtk_default_prop:s0
+
 # NFC
 ro.vendor.device                             u:object_r:vendor_variant_prop:s0
 ro.vendor.device.variant                     u:object_r:vendor_variant_prop:s0
@@ -69,6 +77,9 @@ vendor.oplus.radio.                          u:object_r:vendor_oplus_radio_prop:
 # VT
 ro.vendor.vt.mtk_thin_md_support_mode        u:object_r:vendor_mtk_vendor_vt_prop:s0
 ro.vendor.mtk_data_config                    u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# Video
+ro.vendor.mtk_hdr_video_support              u:object_r:vendor_mtk_pq_ro_prop:s0
 
 # Tee
 vendor.tee.googlekey.status                  u:object_r:vendor_mtk_trustonic_tee_prop:s0

@@ -2022,7 +2022,7 @@ vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
-odm/etc/temperature_profile/sys_high_temp_protect_realme_20743.xml:odm/etc/temperature_profile/sys_high_temp_protect_realme_20743.xml
+odm/etc/temperature_profile/sys_high_temp_protect_realme_20741.xml
 odm/etc/temperature_profile/sys_thermal_control_config.xml
 vendor/bin/thermal
 vendor/bin/thermal_manager

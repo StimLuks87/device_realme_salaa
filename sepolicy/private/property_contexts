@@ -1,4 +1,5 @@
 # Audio
+ro.vendor.qti.va_aosp.support                    u:object_r:vendor_exported_system_prop:s0 exact bool
 audio.tuning.def_path                            u:object_r:system_oplus_audio_prop:s0
 sys.oplus.mm.                                    u:object_r:system_oplus_audio_prop:s0
 
@@ -6,6 +7,8 @@ sys.oplus.mm.                                    u:object_r:system_oplus_audio_p
 bluetooth.device_id.vendor_id                    u:object_r:exported_bluetooth_prop:s0
 persist.bluetooth.a2dp_aac_abr.enable            u:object_r:exported_bluetooth_prop:s0
 persist.bluetooth.enable_power_stats             u:object_r:exported_bluetooth_prop:s0
+persist.bluetooth.a2dp_offload.mtk_coex          u:object_r:bluetooth_a2dp_offload_prop:s0 exact bool
+persist.bluetooth.a2dp_offload.coex_buf_count    u:object_r:bluetooth_a2dp_offload_prop:s0 exact int
 persist.sys.bt.a2dp.pendingtime                  u:object_r:exported_system_prop:s0
 
 # Camera
@@ -53,6 +56,7 @@ ro.hardware.kmsetkey                             u:object_r:exported_default_pro
 # Logging
 persist.sys.assert.panic                         u:object_r:exported_system_prop:s0
 persist.service.debuggable                       u:object_r:exported_system_prop:s0
+ro.logsystem.usertype                            u:object_r:build_prop:s0
 
 # Modem GPS
 persist.vendor.oplus.radio.                      u:object_r:exported_system_prop:s0
@@ -78,6 +82,11 @@ persist.cabc_profile                             u:object_r:system_cabc_prop:s0
 # Sensors
 persist.sys.oppo.fusionlight                     u:object_r:system_oplus_sensor_prop:s0
 persist.sys.oppo.proximity                       u:object_r:system_oplus_sensor_prop:s0
+
+# SVN
+ro.build.version.ota                             u:object_r:exported_system_prop:s0
+ro.build.version.svn                             u:object_r:exported_system_prop:s0
+ro.build.version.svn.c                           u:object_r:exported_system_prop:s0
 
 # Touch
 persist.sys.tpic.                                u:object_r:system_oplus_touch_prop:s0

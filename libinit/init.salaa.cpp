@@ -134,7 +134,7 @@ void set_device_props(void){
             case 92:
                 device="RMX2156L1";
                 model="RMX2156";
-                fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.11e8c10-4e353:user/release-keys";
+                fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.174ebd4_fa4d:user/release-keys";
                 market_name="realme Narzo 30 4G";
                 break;
             default:
