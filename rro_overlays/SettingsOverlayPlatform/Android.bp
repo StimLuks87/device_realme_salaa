@@ -1,0 +1,10 @@
+//
+// SPDX-FileCopyrightText: The Android Open Source Project
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "SettingsOverlayPlatform",
+    product_specific: true,
+}

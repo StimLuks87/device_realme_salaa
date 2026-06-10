@@ -5,12 +5,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settingsprovider.overlay.r7">
-
-    <overlay
-        android:targetPackage="com.android.providers.settings"
-        android:requiredSystemPropertyName="ro.vendor.device"
-        android:requiredSystemPropertyValue="+(RMX2151L1|RMX2155L1)"
-        android:isStatic="true"
-        android:priority="100" />
+          package="com.android.settingsprovidersoverlay.r7">
+    <overlay android:targetPackage="com.android.providers.settings"
+             android:requiredSystemPropertyName="ro.vendor.device"
+             android:requiredSystemPropertyValue="+(RMX2151L1|RMX2155L1)"
+             android:isStatic="true"
+             android:priority="50" />
 </manifest>

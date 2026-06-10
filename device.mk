@@ -212,23 +212,22 @@ PRODUCT_COPY_FILES += \
 # Runtime Resource Overlays
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 PRODUCT_PACKAGES += \
-    ApertureOverlayDevice \
-    ApertureQRScannerOverlayDevice \
-    CarrierConfigOverlayDevice \
-    DialerOverlayDevice \
-    FrameworkResOverlayDevice \
-    LauncherOverlayDevice \
-    NfcOverlayDevice \
+    ApertureOverlay \
+    CarrierConfigOverlay \
+    DialerOverlay \
+    FrameworkResOverlayPlatform \
+    Launcher3DeviceOverlay \
+    NfcOverlay \
     NcmTetheringOverlay \
-    OplusDozeOverlayDevice \
-    PowerOffAlarmOverlayDevice \
-    SettingsOverlayDevice \
+    OplusDozeOverlay \
+    PowerOffAlarmOverlay \
+    SettingsOverlayPlatform \
     SettingsProviderOverlay7 \
     SettingsProviderOverlayNarzo30 \
-    SettingsProviderOverlayDevice \
-    SystemUIOverlayDevice \
-    LineageSDKOverlayDevice \
-    LineageSettingsOverlayDevice
+    SettingsProviderOverlay \
+    SystemUIOverlayPlatform \
+    LineageSDKOverlay \
+    LineageSettingsProviderOverlay
 
 # Permission
 PRODUCT_COPY_FILES += \

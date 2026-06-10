@@ -5,10 +5,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.settingsprovidersoverlay.narzo30">
-    <overlay android:targetPackage="com.android.providers.settings"
-             android:requiredSystemPropertyName="ro.vendor.device"
-             android:requiredSystemPropertyValue="RMX2156L1"
+          package="com.android.dialer.overlay.salaa">
+    <overlay android:targetPackage="com.android.dialer"
              android:isStatic="true"
-             android:priority="50" />
+             android:priority="100" />
 </manifest>
