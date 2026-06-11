@@ -59,9 +59,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl:32 \
-    android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.bluetooth.audio-impl:32 \
-    android.hardware.soundtrigger@2.3-impl:32
+    android.hardware.audio.effect@7.0-impl:32
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:32 \
@@ -84,7 +82,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth-service.mediatek
+    android.hardware.bluetooth-service.mediatek \
+    android.hardware.bluetooth.audio-impl:32
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
@@ -217,7 +216,7 @@ PRODUCT_PACKAGES += \
     DialerOverlay \
     FrameworkResOverlayPlatform \
     Launcher3DeviceOverlay \
-    NfcOverlay \
+    NfcOverlayPlatform \
     NcmTetheringOverlay \
     OplusDozeOverlay \
     PowerOffAlarmOverlay \
@@ -228,6 +227,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayPlatform \
     LineageSDKOverlay \
     LineageSettingsProviderOverlay
+
+# Enforce RRO targets
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permission
 PRODUCT_COPY_FILES += \
@@ -321,10 +323,6 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -387,6 +385,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/oplus \
     hardware/dolby
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.soundtrigger@2.0-impl:32 \
+    android.hardware.soundtrigger@2.3.vendor:32
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
@@ -402,14 +406,6 @@ PRODUCT_PACKAGES += \
 
 # userdata
 PRODUCT_FS_COMPRESSION := 1
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v32 \
-    libbinder-v32 \
-    libhidlbase-v32 \
-    libtinyalsa-v32 \
-    libtinyxml2-v34
 
 # Vibrator
 $(call soong_config_set_bool,mediatek_vibrator,supports_effects,true)
