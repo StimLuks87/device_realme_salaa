@@ -138,6 +138,8 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Fastboot
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
     fastbootd
@@ -210,6 +212,7 @@ PRODUCT_COPY_FILES += \
 
 # Runtime Resource Overlays
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 PRODUCT_PACKAGES += \
     ApertureOverlay \
     CarrierConfigOverlay \
@@ -400,6 +403,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 $(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
@@ -409,6 +413,7 @@ PRODUCT_FS_COMPRESSION := 1
 
 # Vibrator
 $(call soong_config_set_bool,mediatek_vibrator,supports_effects,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
