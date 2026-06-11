@@ -26,13 +26,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6785.usb.rc",
-    src: "init.mt6785.usb.rc",
-    relative_install_path: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.nfc_detect.rc",
     src: "init.nfc_detect.rc",
     relative_install_path: "init/hw",
