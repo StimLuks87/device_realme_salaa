@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    com.android.hardware.drm.clearkey
+    com.android.hardware.drm.clearkey \
+    libmockdrmcryptoplugin
 
 # Graphics
 PRODUCT_PACKAGES += \
