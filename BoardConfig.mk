@@ -82,7 +82,8 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_SOURCE := kernel/realme/mt6785
 TARGET_KERNEL_CONFIG := salaa_defconfig
-TARGET_KERNEL_CLANG_VERSION := r522817
+TARGET_KERNEL_CLANG_VERSION := clang-r547379
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r547379
 TARGET_KERNEL_NO_GCC := true
 
 # Partition Sizes
