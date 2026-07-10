@@ -169,10 +169,7 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_salaa)
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
-$(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # Light
 PRODUCT_PACKAGES += \
@@ -392,7 +389,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Soundtrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl:32 \
-    android.hardware.soundtrigger@2.0-impl:32 \
     android.hardware.soundtrigger@2.3.vendor:32
 
 # Thermal
