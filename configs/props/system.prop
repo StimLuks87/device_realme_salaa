@@ -125,7 +125,7 @@ wifi.tethering.interface=ap0
 ro.infinity.battery=5000 mAh
 ro.infinity.camera=48MP + 8MP + 2MP + 2MP
 ro.infinity.display=1080 x 2400, 90Hz
-ro.infinity.soc=Mediatek Helio G95
+ro.infinity.soc=MT6785
 
 # Incremental
 ro.incremental.enable=1
