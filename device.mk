@@ -360,10 +360,6 @@ PRODUCT_PACKAGES += \
     nfc_detect.sh \
     parts.rc
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
-
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6785.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6785.rc
