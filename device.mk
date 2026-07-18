@@ -23,7 +23,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 AB_OTA_UPDATER := false
 
 # Keys
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/infinity-priv/keys/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: DerpFest AOSP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- DerpFest maintainer -->
+    <string name="derpfest_maintainer" translatable="false">LUKS</string>
+</resources>
