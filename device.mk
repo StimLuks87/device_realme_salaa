@@ -1,4 +1,4 @@
-#
+Yu#
 # SPDX-FileCopyrightText: The Android Open Source Project
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -160,7 +160,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.example \
-    android.hardware.health-service.example-recovery
+    android.hardware.health-service.example_recovery
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_salaa)
