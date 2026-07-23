@@ -222,8 +222,9 @@ PRODUCT_PACKAGES += \
     OplusDozeOverlay \
     PowerOffAlarmOverlay \
     SettingsOverlayPlatform \
-    SettingsProviderOverlay7 \
-    SettingsProviderOverlayNarzo30 \
+    SettingsProviderOverlayRMX2151L1 \
+    SettingsProviderOverlayRMX2155L1 \
+    SettingsProviderOverlayRMX2156L1 \
     SettingsProviderOverlay \
     SystemUIOverlayPlatform \
     LineageSDKOverlay \
