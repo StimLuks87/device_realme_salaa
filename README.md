@@ -1,4 +1,4 @@
-# Android Device tree for realme 7/Narzo 30 4g/Narzo 20 pro (MT6785 RUI3.0)
+# Android Device tree for realme 7/Narzo 30 4g (Salaa RUI3.0)
 
 ## Spec Sheet
 
