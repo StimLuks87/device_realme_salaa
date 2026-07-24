@@ -137,7 +137,7 @@ void set_device_props(void){
                 model="";
                 fingerprint="";
                 market_name="";
-	}
+	    }
     }
 
     if (!fingerprint.empty()) {
