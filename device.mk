@@ -337,6 +337,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm
 
 PRODUCT_PACKAGES += \
+    chipinfo \
     init.mt6785.power.rc \
     init.mt6785.rc \
     init.mt6785.usb.rc \
