@@ -91,6 +91,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_SOURCE := kernel/realme/mt6785
 TARGET_KERNEL_CONFIG := salaa_defconfig
 TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_CLANG_VERSION := clang-r547379
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r547379
 
 # Partition Sizes
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 128 KB
