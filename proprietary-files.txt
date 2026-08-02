@@ -1630,8 +1630,6 @@ vendor/lib64/libformatter.so
 #vendor/lib64/libMtkOmxCore.so
 
 # Misc
-vendor/bin/chipinfo
-vendor/etc/init/chipinfo_init.rc
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
