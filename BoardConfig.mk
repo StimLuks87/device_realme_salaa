@@ -103,8 +103,8 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 452984832       # ~432 MB
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Dynamic Partitions Configuration
-ifeq ($(WITH_GAPPS),false)
--include vendor/infinity/config/BoardConfigReservedSize.mk
+ifeq ($(WITH_GMS),false)
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 endif
 BOARD_SUPER_PARTITION_SIZE := 8053063680           # ~7.5 GB
 BOARD_SUPER_PARTITION_GROUPS := main
@@ -144,22 +144,22 @@ BOARD_VNDK_VERSION := current
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_KEY_PATH := vendor/infinity-priv/keys/vbmeta.pem
+BOARD_AVB_KEY_PATH := vendor/evolution-priv/keys/vbmeta.pem
 BOARD_AVB_ALGORITHM := SHA256_RSA4096
 
-BOARD_AVB_RECOVERY_KEY_PATH := vendor/infinity-priv/keys/recovery.pem
+BOARD_AVB_RECOVERY_KEY_PATH := vendor/evolution-priv/keys/recovery.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 BOARD_AVB_VBMETA_SYSTEM := product system system_ext
-BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/infinity-priv/keys/vbmeta_system.pem
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/evolution-priv/keys/vbmeta_system.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 BOARD_AVB_VBMETA_VENDOR := odm vendor
-BOARD_AVB_VBMETA_VENDOR_KEY_PATH := vendor/infinity-priv/keys/vbmeta_vendor.pem
+BOARD_AVB_VBMETA_VENDOR_KEY_PATH := vendor/evolution-priv/keys/vbmeta_vendor.pem
 BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3

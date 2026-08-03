@@ -42,8 +42,8 @@ oplus.goodix.fp                                  u:object_r:system_oplus_fingerp
 oplus.optical.                                   u:object_r:system_oplus_fingerprint_prop:s0
 
 # Fs-verity
-pm.dexopt.dm.require_fsverity   		 u:object_r:exported_pm_prop:s0
-pm.dexopt.dm.require_manifest   		 u:object_r:exported_pm_prop:s0
+pm.dexopt.dm.require_fsverity		         u:object_r:exported_pm_prop:s0
+pm.dexopt.dm.require_manifest		         u:object_r:exported_pm_prop:s0
 
 # Hardware
 ro.build.release_type                            u:object_r:exported_default_prop:s0 exact string
@@ -74,7 +74,6 @@ ro.oplus.version.                                u:object_r:system_oplus_project
 ro.product.hw                                    u:object_r:system_oplus_project_prop:s0
 ro.separate.soft                                 u:object_r:system_oplus_project_prop:s0
 ro.product.marketname                            u:object_r:build_prop:s0
-ro.infinity.device                               u:object_r:build_prop:s0
 
 # Realme Parts
 persist.cabc_profile                             u:object_r:system_cabc_prop:s0

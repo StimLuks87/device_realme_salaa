@@ -121,12 +121,6 @@ wifi.interface=wlan0
 wifi.direct.interface=p2p0
 wifi.tethering.interface=ap0
 
-# InfinityX phoneinfo props
-ro.infinity.battery=5000 mAh
-ro.infinity.camera=48MP + 8MP + 2MP + 2MP
-ro.infinity.display=1080 x 2400, 90Hz
-ro.infinity.soc=MT6785
-
 # Incremental
 ro.incremental.enable=1
 
