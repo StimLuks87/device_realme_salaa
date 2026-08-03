@@ -968,6 +968,18 @@ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+on zygote-start
+    stop statsd
+
+service statsd /apex/com.android.os.statsd/bin/statsd
+    class main
+    socket statsdw dgram+passcred 0222 statsd statsd
+    user statsd
+    group statsd log
+    task_profiles ProcessCapacityHigh HighEnergySaving
+    override
+    disabled
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
