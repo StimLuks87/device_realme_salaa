@@ -66,7 +66,12 @@ PRODUCT_PACKAGES += \
     audio.primary.default:32 \
     audio.r_submix.default:32 \
     audio.usb.default:32 \
-    audio_policy.stub:32
+    audio_policy.stub:32 \
+    libaudiofoundation.vendor:32 \
+    libalsautils:32 \
+    libdynproc:32 \
+    libhapticgenerator:32 \
+    libunwindstack.vendor
 
 # Audio configuration files
 PRODUCT_COPY_FILES += \
@@ -83,7 +88,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek \
-    android.hardware.bluetooth.audio-impl:32
+    android.hardware.bluetooth.audio-impl \
+    libbluetooth_audio_session
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
