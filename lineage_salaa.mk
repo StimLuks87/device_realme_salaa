@@ -19,20 +19,16 @@ $(call inherit-product, device/realme/salaa/device.mk)
 # Evo-X flags
 BUILD_BCR := true
 EVO_BUILD_TYPE := Unofficial
-TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_ACCORD := false
 
 # GMS
 WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true 
+TARGET_USES_PICO_GAPPS := true 
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_BOOT_ANIMATIONS := true
 
 # Device Information
 PRODUCT_NAME := lineage_salaa
