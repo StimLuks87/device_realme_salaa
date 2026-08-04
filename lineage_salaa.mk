@@ -9,7 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-
 # Inherit some common Evo-X OS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -17,11 +16,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/realme/salaa/device.mk)
 
 # Evo-X flags
-BUILD_BCR := true
 EVO_BUILD_TYPE := Unofficial
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_INCLUDE_ACCORD := false
+BUILD_BCR := true
+PERF_ANIM_OVERRIDE := true
 
 # GMS
 WITH_GMS := true
@@ -39,5 +39,4 @@ PRODUCT_MODEL := salaa
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sys_mssi_64_cn_armv82-user 12 SP1A.210812.016 1711679158901 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES := BuildDesc=$(call normalize-path-list, "sys_mssi_64_cn_armv82-user 12 SP1A.210812.016 1711679158901 release-keys")
