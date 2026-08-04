@@ -51,7 +51,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 WITH_DEXPREOPT_DEBUG_INFO := false
 WITH_DEXPREOPT := true
 USE_DEX2OAT_DEBUG := false
-DEX_PREOPT_DEFAULT := generate-vdex-and-image
+DEX_PREOPT_DEFAULT := speed-profile
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
