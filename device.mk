@@ -360,18 +360,15 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     multi_init.rc \
     fstab.mt6785 \
+    fstab.mt6785.ramdisk \
     ueventd.mtk.rc \
     ueventd.oplus.rc \
     nfc_detect.sh \
     parts.rc
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
-
 # Recovery
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/etc/init.recovery.mt6785.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6785.rc
+PRODUCT_PACKAGES += \
+    init.recovery.mt6785.rc
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
