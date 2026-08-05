@@ -32,7 +32,7 @@ WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device Information
-PRODUCT_NAME := lineage_salaa
+PRODUCT_NAME := infinity_salaa
 PRODUCT_DEVICE := salaa
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
