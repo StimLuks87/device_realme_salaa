@@ -52,7 +52,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Graphics
+# Graphics & Rendering
+HWUI_COMPILE_FOR_PERF := true
 TARGET_USES_VULKAN := true
 
 # Platform
