@@ -137,7 +137,7 @@ void set_device_props(void){
                 model="";
                 fingerprint="";
                 market_name="";
-	    }
+        }
     }
 
     if (!fingerprint.empty()) {
@@ -160,6 +160,7 @@ void set_device_props(void){
     set_ro_build_prop("product", model, false);
     property_override("ro.product.device", device.c_str());
     property_override("ro.vendor.device", device.c_str());
+    property_override("ro.infinity.device", device.c_str());
     property_override("bluetooth.device.default_name", market_name.c_str());
     property_override("vendor.usb.product_string", market_name.c_str());
     property_override("ro.product.marketname", market_name.c_str());

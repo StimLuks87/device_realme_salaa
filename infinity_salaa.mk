@@ -9,23 +9,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-# Inherit some common Evo-X OS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity-X OS stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from device makefile.
 $(call inherit-product, device/realme/salaa/device.mk)
 
-# Evo-X flags
-EVO_BUILD_TYPE := Unofficial
-TARGET_SUPPORTS_64_BIT_APPS := true
+# Infinity-X flags
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := LUKS
+TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_ACCORD := false
-BUILD_BCR := true
-PERF_ANIM_OVERRIDE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_SHIPS_GOOGLE_DIALER := true
+TARGET_SHIPS_FULL_GAPPS := true
 
-# GMS
-WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true 
+# Gapps
+WITH_GAPPS := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
