@@ -21,7 +21,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/realme/salaa',
     'hardware/google/interfaces',
-    'hardware/google/pixel'
+    'hardware/google/pixel',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
     'hardware/mediatek/libaedv',
