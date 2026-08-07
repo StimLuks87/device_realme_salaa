@@ -172,6 +172,11 @@
         <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.engineermode</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.3::IEmd/EmHidlServer</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.mms</name>
         <transport>hwbinder</transport>
         <fqname>@1.6::IMms/default</fqname>
