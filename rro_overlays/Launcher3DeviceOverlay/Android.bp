@@ -6,5 +6,6 @@
 
 runtime_resource_overlay {
     name: "Launcher3DeviceOverlay",
-    vendor: true,
+    theme: "Launcher3DeviceOverlay",
+    product_specific: true,
 }

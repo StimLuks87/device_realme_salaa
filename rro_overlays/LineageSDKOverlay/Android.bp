@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "LineageSDKOverlay",
-    product_specific: true,
+    vendor: true,
 }
