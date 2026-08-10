@@ -37,7 +37,7 @@
 /data/per_boot(/.*)?                                                                                    u:object_r:per_boot_file:s0
 
 # Sensors
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:vendor_hal_oplus_sensor_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                              u:object_r:hal_sensors_default_exec:s0
 /dev/m_virtual_sensor_misc                                                                              u:object_r:virtual_sensor_device:s0
 /dev/nanohub                                                                                            u:object_r:vendor_nanohub_device:s0
 

@@ -28,8 +28,5 @@ vendor.oplus.hardware.appradio::IOplusAppRadio                                u:
 vendor.oplus.hardware.ims::IOplusImsRadio                                     u:object_r:mtk_hal_rild_hwservice:s0
 vendor.oplus.hardware.mtkmodemaci::IMtkModemAci                               u:object_r:mtk_hal_rild_hwservice:s0
 
-# Sensors
-vendor.oplus.hardware.oplusSensor::ISensorFeature                             u:object_r:vendor_hal_oplus_sensor_hwservice:s0
-
 # Supplicant
 vendor.oplus.hardware.wifi.supplicant::IOplusSupplicant                       u:object_r:hal_wifi_supplicant_hwservice:s0
