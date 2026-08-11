@@ -27,6 +27,7 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/infinity-priv/keys/releasekey
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
+​BOARD_SHIPPING_API_LEVEL := 31
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
