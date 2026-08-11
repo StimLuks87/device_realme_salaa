@@ -34,6 +34,8 @@ vendor.usbsph.ul.pcm.dump=0
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 
 # Camera
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
