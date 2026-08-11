@@ -187,6 +187,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(LOCAL_PATH)/configs/linker/linker.config.json
 
+# Library Codec
+PRODUCT_PACKAGES += \
+    libldacBT_enc \
+    libldacBT_abr \
+    libldacBT_bco \
+    libldacBT_bco.vendor \
+    liblhdc
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
