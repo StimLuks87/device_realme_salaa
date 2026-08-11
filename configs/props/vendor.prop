@@ -127,12 +127,6 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=1
 ro.vendor.pq.mtk_video_transition=1
 
-# Dex2oat
-dalvik.vm.dex2oat-cpu-set=4,5,6,7
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
-dalvik.vm.image-dex2oat-threads=4
-
 # GPS
 ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
