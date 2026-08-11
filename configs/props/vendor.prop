@@ -143,8 +143,8 @@ vendor.connsys.driver.ready=no
 
 # SurfaceFlinger
 ro.surface_flinger.supports_background_blur=1
-ro.surface_flinger.set_idle_timer_ms=4000
-ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_idle_timer_ms=1000
+ro.surface_flinger.set_touch_timer_ms=1000
 ro.surface_flinger.set_display_power_timer_ms=5000
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
