@@ -26,8 +26,8 @@ bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 persist.bluetooth.enable_power_stats=false
 persist.bluetooth.a2dp_aac_abr.enable=true
-persist.bluetooth.a2dp_offload.cap=sbc-aac
-persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
 # Radio FM
