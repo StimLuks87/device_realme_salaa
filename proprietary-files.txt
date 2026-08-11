@@ -231,6 +231,22 @@ vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_relayer.so
 
+# Bluetooth (LDAC)
+system/lib/libldacBT_abr.so
+system/lib/libldacBT_enc.so
+system/lib64/libldacBT_abr.so
+system/lib64/libldacBT_enc.so
+
+# Bluetooth (LHDC)
+system/lib/liblhdc.so
+system/lib/liblhdcBT_enc.so
+system/lib64/liblhdc.so
+system/lib64/liblhdcBT_enc.so
+
+# Bluetooth (aptX)
+system/lib64/libaptXHD_encoder.so
+system/lib64/libaptX_encoder.so
+
 # Camera
 odm/etc/init/init.camera_update.rc
 odm/etc/init/init.oplus.reserve.rc
