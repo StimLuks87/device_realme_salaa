@@ -1342,10 +1342,6 @@ vendor/lib64/libcharon-ss.so
 vendor/lib64/libhydra.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 
-# GNSS - from MT6893
-vendor/lib64/librpc.so|03a3a11638c8a0a844e31ac3f47a8ceedc0368b9
-vendor/lib64/libviagpsrpc.so|0ca11731d8d3142ea6d1984f09217632d81d667c
-
 # GNSS (Configs)
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
