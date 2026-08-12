@@ -5,7 +5,7 @@ cam_vpu2.img
 cam_vpu3.img
 cdt_engineering.img
 gz1.img
-logo.bin|69fe09f876db5c0bc86f7cc53ead64afa2de6e3d
+logo.bin|90d468adf47c49d60fc0d3ff8632ae7c56428419
 md1img.img
 preloader_ufs.img
 scp1.img
@@ -14,4 +14,4 @@ sspm_1.img
 tee1.img
 
 # Prevent lk from setting sku prop: sed -i 's/sku/fku/' lk.img
-lk.img|7bf0b6e214f32205260bb6c2bf53e95595bc10c8
+lk.img|43968d0a9c8651863688b95ee770756481f37c6a
