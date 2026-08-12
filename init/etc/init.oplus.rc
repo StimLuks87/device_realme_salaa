@@ -76,17 +76,10 @@ on boot
     chown system system /sys/kernel/oplus_display/esd_status
     chown system system /sys/kernel/oplus_display/hbm
     chown system system /sys/kernel/oplus_display/aod_area
-    chown system system /sys/kernel/oplus_display/panel_id
-    chown root root /sys/kernel/oplus_display/panel_serial_number
     chown system system /sys/devices/virtual/mtk_disp_mgr/mtk_disp_mgr/LCM_ESS
     chown system system /sys/kernel/oplus_display/notify_fppress
-    chown system system /sys/kernel/oplus_display/oplus_brightness
-    chown system system /sys/kernel/oplus_display/oplus_max_brightness
     chown system system /sys/kernel/oplus_display/aod_light_mode_set
-    chown system system /sys/kernel/oplus_display/dim_alpha
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
-    chown system system /sys/kernel/oplus_display/dim_dc_alpha
-    chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/seed
 
     # Update fastcharge firmware
