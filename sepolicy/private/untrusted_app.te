@@ -1,6 +1,9 @@
 dontaudit untrusted_app vm_data_file:dir r_dir_perms;
 dontaudit untrusted_app adbd_tradeinmode:unix_stream_socket connectto;
 dontaudit untrusted_app proc_asound:dir r_dir_perms;
+dontaudit untrusted_app proc_kallsyms:file getattr;
+dontaudit untrusted_app proc_keys:file getattr;
+dontaudit untrusted_app proc_modules:file getattr;
 dontaudit untrusted_app metadata_file:dir getattr;
 dontaudit untrusted_app cgroup:dir r_dir_perms;
 dontaudit untrusted_app qemu_hw_prop:file read;
@@ -8,5 +11,5 @@ dontaudit untrusted_app qemu_sf_lcd_density_prop:file read;
 dontaudit untrusted_app serialno_prop:file read;
 dontaudit untrusted_app sysfs_net:dir search;
 dontaudit untrusted_app sysfs_batteryinfo:dir search;
+dontaudit untrusted_app unlabeled:filesystem getattr;
 allow untrusted_app sysfs_headset:file getattr;
-allow untrusted_app unlabeled:filesystem getattr;
