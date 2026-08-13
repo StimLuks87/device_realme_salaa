@@ -19,3 +19,6 @@ type hal_performance_oplus_hwservice, hwservice_manager_type;
 # Nfc
 type nxpnfc_hwservice, hwservice_manager_type;
 type nxpese_hwservice, hwservice_manager_type;
+
+# Sensor
+type hal_oplusSensor_hwservice, hwservice_manager_type, protected_hwservice;
