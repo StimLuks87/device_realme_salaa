@@ -38,5 +38,5 @@ vendor.oplus.hardware.mtkmodemaci::IMtkModemAci                               u:
 # Supplicant
 vendor.oplus.hardware.wifi.supplicant::IOplusSupplicant                       u:object_r:hal_wifi_supplicant_hwservice:s0
 
- # Sensor
+# Sensor
 vendor.oplus.hardware.oplusSensor::ISensorFeature                             u:object_r:hal_oplusSensor_hwservice:s0
