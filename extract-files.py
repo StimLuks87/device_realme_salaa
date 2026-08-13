@@ -37,6 +37,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'vendor.oplus.hardware.displaypanelfeature@1.0',
         'vendor.oplus.hardware.biometrics.fingerprint@2.1',
         'vendor.oplus.hardware.commondcs@1.0',
         'libhwm-oplus',
