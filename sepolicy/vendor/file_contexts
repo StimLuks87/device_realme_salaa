@@ -30,6 +30,7 @@
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.charger@1\.0-service                                  u:object_r:hal_charger_oplus_exec:s0
 
 # Display
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.displaypanelfeature@1\.0-service                      u:object_r:hal_graphics_composer_default_exec:s0
 /dev/oplus_display                                                                                      u:object_r:graphics_device:s0
 /data/vendor/display(/.*)?                                                                              u:object_r:vendor_display_vendor_data_file:s0
 
