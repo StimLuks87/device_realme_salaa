@@ -224,6 +224,8 @@ odm/framework/vendor.oplus.hardware.performance-V1.0-java.jar
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 
 # Bluetooth
+vendor/bin/autobt
+vendor/etc/init/init.bt_drv.rc
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetoothem_mtk.so
