@@ -215,7 +215,6 @@ odm/firmware/aw87359/aw87359_dspk_ftm.bin
 # Audio (Hardware)
 vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib/hw/audio.primary.mt6785.so
-vendor/lib/hw/audio.r_submix.mt6785.so
 
 # Audio (Oplus)
 odm/bin/hw/vendor.oplus.hardware.performance@1.0-service
@@ -1898,6 +1897,8 @@ odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
 odm/etc/sensor/sensor_config.json
 odm/etc/vintf/manifest/manifest_oplusSensor.xml
+odm/lib/libmxmafa.so
+odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/libhwm-oplus.so;MODULE_SUFFIX=_odm
 odm/lib64/libmmc.so
 odm/lib64/libmxmafa.so
