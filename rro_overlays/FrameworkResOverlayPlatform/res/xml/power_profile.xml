@@ -28,7 +28,7 @@
        significantly, so should be measured on the shipping platform
        with a power meter. -->
   <item name="none">0</item>
-  <item name="ambient.on.display0">35</item>
+  <item name="ambient on">35</item>
   <item name="screen.on.display0">90</item>  <!-- ~200mA -->
   <item name="screen.full.display0">250</item>  <!-- ~300mA -->
   <item name="bluetooth.active">80</item> <!-- Bluetooth data transfer, ~10mA -->
@@ -36,12 +36,14 @@
   <item name="wifi.on">2.8</item>  <!-- ~3mA -->
   <item name="wifi.active">190</item>  <!-- WIFI data transfer, ~200mA -->
   <item name="wifi.scan">130</item>  <!-- WIFI network scanning, ~100mA -->
+  <item name="audio">0</item> <!-- ~10mA -->
+  <item name="video">0</item> <!-- ~50mA -->
   <item name="camera.flashlight">150</item> <!-- Avg. power for camera flash, ~160mA -->
   <item name="camera.avg">550</item> <!-- Avg. power use of camera in standard usecases, ~550mA -->
   <item name="gps.on">45</item> <!-- ~50mA -->
 
-  <item name="audio">16.59</item> <!-- ~10mA -->
-  <item name="video">74.85</item> <!-- ~50mA -->
+  <item name="dsp.audio">16.59</item> <!-- ~10mA -->
+  <item name="dsp.video">74.85</item> <!-- ~50mA -->
   <item name="bluetooth.controller.idle">1.7</item>  <!--new add -->
   <item name="bluetooth.controller.rx">76</item>  <!--new add  -->
   <item name="bluetooth.controller.tx">176</item>  <!--new add  -->
@@ -56,7 +58,6 @@
       <value>2</value> <!-- ~2mA -->
       <value>1</value> <!-- ~1mA -->
   </array>
-
 
   <!-- Radio related values. For modems WITH energy reporting support in firmware, use
        modem.controller.idle, modem.controller.tx, modem.controller.rx, modem.controller.voltage.
@@ -211,10 +212,10 @@
       <value>400</value>  <!-- ~200mA -->
   </array>
 
-  <item name="cpu.idle">8</item>
+  <item name="cpu.awake">8</item>
   <!-- Additional power consumption by CPU excluding cluster and core when  running -->
   <!-- Current when CPU is idle -->
-  <item name="cpu.suspend">6.5</item>
+  <item name="cpu.idle">6.5</item>
 
   <!-- Memory bandwidth power values in mA at the rail. There must be one value
        for each bucket defined in the device tree. -->
